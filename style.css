@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fef8e4;
+}
+
+/* Header */
+header {
+    background-color: #f8c7d2;
+    text-align: center;
+    color: #333;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+header img {
+    max-width: 100%; 
+    height: auto; 
+    width: 200px; 
+    margin-bottom: 10px; 
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex; 
+    align-items: flex-start; 
+    padding: 40px 20px;
+}
+
+/* Profile Section */
+.profile {
+    flex: 1; 
+    margin-right: 2em;
+}
+
+.biodata {
+    display: none; 
+    flex: 2; 
+    margin-right: 10em; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px; 
+    color: #333; 
+    line-height: 1.5; 
+}
+
+
+/* Adjust the profile image */
+.profile img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.more-info {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.more-info:hover {
+    background-color: #4a90e2;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.products li {
+    text-align: center;
+    flex: 1 1 calc(33.33% - 20px); 
+    margin: 10px; 
+    max-width: 200px; 
+}
+
+.products li a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+.products li img {
+    width: 100%; 
+    border-radius: 5px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.products li a:hover img {
+    transform: scale(1.05); 
+    opacity: 0.9; 
+}
+
+.products li a:hover h3 {
+    color: #FF5733; 
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 40px 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.about-text {
+    margin-bottom: 20px; 
+}
+
+.about-pattern img {
+    width: 100%;
+    max-width: 200px; 
+}
+
+/* Footer */
+footer {
+    background-color: #eef2ea;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.footer-section {
+    flex: 0 1 auto; 
+    margin: 10px 10em; 
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+footer img {
+    max-width: 100%; 
+    height: auto; 
+    width: 180px; 
+    margin-left: 20px; 
+}
+
+.join-now {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .biodata {
+        font-size: 16px;
+    }
+    .footer-section {
+        margin: 10px 5em;
+    }
+    
+}
+
+
+

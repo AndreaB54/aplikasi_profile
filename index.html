@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrea - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img src="images/creativity1.png" alt="">
+      <h1>GET TO KNOW ME</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="profile-container">
+      <div class="profile">
+        <div class="profile-content">
+          <img src="images/foto_profil.jpg" alt="Creative items" />
+          <h1>Andrea Marie Baikole</h1>
+          <button class="more-info" onclick="toggleBiodata()">More Info</button>
+        </div>
+      </div>
+
+      <div class="biodata" id="biodata">
+        <h2>Biodata</h2>
+        <p><strong>Name:</strong> Andrea Marie Baikole</p>
+        <p><strong>Age:</strong> 20</p>
+        <p><strong>Location:</strong> Yogyakarta, Indonesia</p>
+        <p>
+          <strong>Interests:</strong> Web Development, Cloud Computing, Network
+          Security
+        </p>
+        <p>
+          <strong>About Me:</strong> I am a passionate informatics student at
+          Universitas Kristen Duta Wacana with a keen interest in cybersecurity
+          and cloud computing, currently honing my skills through the Bangkit
+          2024 program.
+        </p>
+      </div>
+    </section>
+
+    <section class="social-media">
+      <h2>Social Media</h2>
+      <ul class="products">
+        <li>
+          <a href="https://github.com/AndreaB54">
+            <img src="images/github.png" alt="GitHub" />
+            <h3>GitHub</h3>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/andrea_baikole/">
+            <img src="images/instagram.png" alt="Instagram" />
+            <h3>Instagram</h3>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/andrea-marie-baikole-269a5a262/">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+            <h3>LinkedIn</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>XO, Andrea.</h2>
+          <p>
+            Welcome to my portfolio website! No matter where 
+            you are in your journey—whether you’re exploring new talents, 
+            looking for collaboration, or simply curious—I’ve designed this 
+            space to showcase my work and passions. It’s a place to connect, 
+            inspire, and grow. Let’s take a step back from the rush and focus 
+            on what truly matters. Dive in, and let’s create something meaningful together!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-section">
+        <h3>Connect.</h3>
+        <p><a href="https://www.instagram.com/">Instagram</a></p>
+        <p><a href="https://id.pinterest.com/">Pinterest</a></p>
+        <p><a href="https://www.tiktok.com/foryou?lang=en">TikTok</a></p>
+        <p><a href="tel:08123456789">Contact</a></p>
+      </div>
+      <img src="images/creativity2.png" alt="">
+      <div class="footer-section">
+        <h3>Pen Pals.</h3>
+        <p>Email Address</p>
+        <a href="mailto:andrea.baikole@gmail.com"><button class="join-now">JOIN NOW</button></a>
+      </div>
+      
+    </footer>
+
+    <script>
+      function toggleBiodata() {
+        const biodataSection = document.getElementById("biodata");
+        // Toggle the display property between 'none' and 'block'
+        if (
+          biodataSection.style.display === "none" ||
+          biodataSection.style.display === ""
+        ) {
+          biodataSection.style.display = "block"; // Show the biodata section
+        } else {
+          biodataSection.style.display = "none"; // Hide the biodata section
+        }
+      }
+    </script>
+  </body>
+</html>
